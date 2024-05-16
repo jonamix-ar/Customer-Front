@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+// Importa las variables de Bootstrap
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Sobrescribe las variables de Bootstrap para el modo oscuro
+$primary: #09A7B2;
+$body-bg: #fafbfe;
+$black: #000000;
+$white: #ffffff;
+$primary-hover: #59c8c9;
+$shadow: 0px 0px 5px 0px rgba(154, 161, 171, 0.5);
+$font-family: "Fira Sans", sans-serif;
+$bs-border-color-translucent: rgba(0, 0, 0, 0);
+$shadow: 0px 0px 5px 0px rgba(154, 161, 171, 0.5);
+$bs-border-color-translucent: rgba(0, 0, 0, 0);
+
+// Habilita el modo oscuro
+$theme-colors: (
+    dark: (primary: $primary,
+        body-bg: $body-bg,
+        black: $black,
+        white: $white,
+        primary-hover: $primary-hover,
+        shadow: $shadow,
+        font-family: $font-family,
+        bs-border-color-translucent: $bs-border-color-translucent ),
+);
+
+// Importa el resto de los estilos de Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: $body-bg;
+    max-height: 100vh;
+    font-family: $font-family;
+    font-size: 0.75rem !important;
+    line-height: 1.5 !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-text-decoration-skip: objects;
+
+    &:hover {
+        color: $primary-hover;
+        text-decoration: underline;
+    }
+}
+
+p {
+    font-weight: 600;
+}
+
+.fs-1 {
+    font-size: 4.768371582rem !important;
+}
+
+.fs-2 {
+    font-size: 3.8146972656rem !important;
+}
+
+.fs-3 {
+    font-size: 3.0517578125rem !important;
+}
+
+.fs-4 {
+    font-size: 2.44140625rem !important;
+}
+
+.fs-5 {
+    font-size: 1.953125rem !important;
+}
+
+.fs-6 {
+    font-size: 1.5625rem !important;
+}
+
+.fs-7 {
+    font-size: 1.25rem !important;
+}
+
+.fs-8 {
+    font-size: 1rem !important;
+}
+
+.fs-9 {
+    font-size: 0.8rem !important;
+}
+
+.fs-10 {
+    font-size: 0.64rem !important;
+}
+
+.fs-11 {
+    font-size: 0.512rem !important;
+}
+
+.card {
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+    border-color: $bs-border-color-translucent;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card-header {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.btn {
+    --btn-color: #31374a;
+    --btn-bg: #fff;
+    border-color: #d9d9d9;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+
+    &.btn-primary {
+        color: #fff;
+        border-color: #09A7B2;
+        background-color: var(--primary) !important;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) !important;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    }
+
+    &.btn-lg {
+        height: 45px;
+        padding: 6.4px 15px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        outline: 0;
+        color: #fff;
+        border-color: #59c8c9;
+        background: #59c8c9;
+    }
+}
+
+.welcomeText {
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+.form-control {
+    min-height: 45px;
+    border-radius: 15px;
+}
+
+.legalistas-icon-top {
+    position: absolute;
+    height: 20%;
+    left: 35px;
+    top: 3vh;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.legalistas-icon-bottom {
+    position: absolute;
+    height: 60%;
+    right: 5vw;
+    bottom: 0;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+

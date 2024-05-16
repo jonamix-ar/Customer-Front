@@ -1,0 +1,33 @@
+.navbarToggler {
+    --bs-navbar-color: rgba(255, 255, 255, 1.0);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75); 
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: 0 !important;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar{
+    color: #fff;
+    background-color: #09A7B2;
+    z-index: 9999;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+.dropdown-toggle::after {
+    color: #fff !important;
+}
+
+.avatar {
+    background-color: var(--bs-indigo) !important;
+}
+
+.alertNotification {
+    top: 5px!important;
+    left: 80% !important;
+}
